@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/dateBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:text="DD/MM/YYYY"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/gray"
+        android:textSize="15sp"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/arrow"
+        />
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#BFBFBF"/>
+    <Button
+        android:id="@+id/timeSelectBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:text="HH:MM"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/gray"
+        android:textSize="15sp"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/arrow"
+
+        />
+
+</LinearLayout>

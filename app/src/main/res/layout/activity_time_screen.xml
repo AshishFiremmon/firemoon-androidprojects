@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.vindhyachal.doctorsappointment.SplashScreen">
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/topbar" app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Time"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+
+               <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+
+        >
+
+
+            <TextView  android:layout_width="match_parent"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:text="Mon"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                />
+
+         <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+android:orientation="vertical"
+            >
+             <TextView
+
+                 android:id="@+id/timetxt1"
+                 android:layout_width="fill_parent"
+                 android:layout_weight=".5"
+                 android:layout_height="wrap_content"
+                 android:text="Add Time"
+                 android:gravity="center"
+                 android:textSize="20sp"
+                 android:visibility="visible"
+                 android:clickable="true"
+
+                 android:onClick="timeSelect"
+                 />
+             <TextView
+                 android:layout_marginTop="5dp"
+                 android:id="@+id/timetxt2"
+                 android:layout_width="fill_parent"
+                 android:layout_weight=".5"
+                 android:layout_height="wrap_content"
+                 android:text="Add Time"
+                 android:gravity="center"
+                 android:textSize="20sp"
+                 android:visibility="visible"
+                 android:clickable="true"
+                 android:onClick="timeSelect"
+
+                 />
+
+
+         </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/skyblue"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+android:layout_marginTop="5dp"
+        >
+
+
+        <TextView  android:layout_width="match_parent"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="Tues"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+
+                android:id="@+id/timetxt3"
+                android:layout_width="fill_parent"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="Add Time"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:visibility="visible"
+                android:clickable="true"
+
+                android:onClick="timeSelect"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/timetxt4"
+                android:layout_width="fill_parent"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="Add Time"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:visibility="visible"
+                android:clickable="true"
+
+                android:onClick="timeSelect"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/skyblue"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <TextView  android:layout_width="match_parent"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="Wed"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+
+                android:id="@+id/timetxt5"
+                android:layout_width="fill_parent"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="Add Time"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:visibility="visible"
+                android:clickable="true"
+
+                android:onClick="timeSelect"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/timetxt6"
+                android:layout_width="fill_parent"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="Add Time"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:visibility="visible"
+                android:clickable="true"
+
+                android:onClick="timeSelect"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/skyblue"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <TextView  android:layout_width="match_parent"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="Thur"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+
+                android:id="@+id/timetxt7"
+                android:layout_width="fill_parent"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="Add Time"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:visibility="visible"
+                android:clickable="true"
+
+                android:onClick="timeSelect"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/timetxt8"
+                android:layout_width="fill_parent"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="Add Time"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:visibility="visible"
+                android:clickable="true"
+
+                android:onClick="timeSelect"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/skyblue"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <TextView  android:layout_width="match_parent"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="Fri"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+
+                android:id="@+id/timetxt9"
+                android:layout_width="fill_parent"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="Add Time"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:visibility="visible"
+                android:clickable="true"
+
+                android:onClick="timeSelect"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/timetxt10"
+                android:layout_width="fill_parent"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="Add Time"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:visibility="visible"
+                android:clickable="true"
+
+                android:onClick="timeSelect"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/skyblue"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <TextView  android:layout_width="match_parent"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="Sat"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+
+                android:id="@+id/timetxt11"
+                android:layout_width="fill_parent"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="Add Time"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:visibility="visible"
+                android:clickable="true"
+
+                android:onClick="timeSelect"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/timetxt12"
+                android:layout_width="fill_parent"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="Add Time"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:visibility="visible"
+                android:clickable="true"
+
+                android:onClick="timeSelect"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/skyblue"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <TextView  android:layout_width="match_parent"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="Sun"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+
+                android:id="@+id/timetxt13"
+                android:layout_width="fill_parent"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="Add Time"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:visibility="visible"
+                android:clickable="true"
+
+                android:onClick="timeSelect"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/timetxt14"
+                android:layout_width="fill_parent"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="Add Time"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:visibility="visible"
+                android:clickable="true"
+
+                android:onClick="timeSelect"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/skyblue"/>
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_1x"
+        android:layout_marginTop="5dp"
+        android:text="Save"
+        android:textColor="@color/white"/>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
